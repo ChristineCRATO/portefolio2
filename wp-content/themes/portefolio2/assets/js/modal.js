@@ -4,7 +4,7 @@ console.log("Modal JS is Open !");
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("dom is ok");
     // Modal Contact
-    const btnModal = document.getElementById('menu-item-46'); // Contact Button Menu Nav
+    const btnModal = document.getElementById('menu-item-81'); // Contact Button Menu Nav
     const btnSingle = document.getElementById('contact-modal'); // Contact Button Single-Photo
     const modal = document.getElementById('modal'); // Modal Elements
     const contactModal = document.querySelector('.contactModal'); // Modal CSS

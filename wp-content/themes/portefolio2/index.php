@@ -5,12 +5,17 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package WordPress
- * @subpackage Nathalie Mota
- * @since Twenty Twenty-One 1.0
- * @author GitPixel
+ * @subpackage Portefolio
+ * @since Portefolio 1.0
+ * @author Christine CRATO
  *
  */
 ?>
+
+<?php
+echo "Bonjour, index php!";
+?>
+
 <?php
 
 get_header();
@@ -23,7 +28,7 @@ get_header();
 			<?php 
 			if (have_posts()) :
 				while (have_posts()) : the_post();
-					get_the_content();
+					the_content();
 				endwhile;
 			endif;
 			?>

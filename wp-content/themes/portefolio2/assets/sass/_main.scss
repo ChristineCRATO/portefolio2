@@ -14,26 +14,29 @@ body {
 * {
     padding: 0;
     margin: 0;
+    background-color: #f7e1d6;
 }
 li {
     list-style: none;
 }
 a, a:visited {
-    color: black;
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
 }
 a:hover {
-    color: black;
     font-weight: bold;
+    color: #BE77B3;
+}
+p {
+    color: #525588;
 }
 
 .wp-block-group__inner-container {
     padding: 2vw 1vw;
     margin: 0 11vw;
 }
-.wp-block-group, .viePrive {
+.wp-block-group, .mentionLeg {
     line-height: 2.5;
     h3 {
         font-family: "SpaceMonoRegular";

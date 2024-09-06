@@ -17,8 +17,13 @@ footer {
     border-top: 1px solid black;
     box-shadow: 0 -2px rgba(0, 0, 0, 0.3);
 
-        p {
+        a, p {
             text-transform: uppercase;
+            color: #f69D5C;
+
+            a, p:hover {
+                color: #BE77B3;
+            }
         }
     
         @media (max-width: $VSD) {
@@ -39,10 +44,10 @@ footer {
                     font-weight: bold;
                     }
                 }
-                #menu-item-53 {
+                #menu-item-83 {
                     margin-bottom: 11vw;
                 }
-                #menu-item-58 {
+                #menu-item-84 {
                     display: flex;
                     justify-content: center;
                     margin-bottom: 8vw;

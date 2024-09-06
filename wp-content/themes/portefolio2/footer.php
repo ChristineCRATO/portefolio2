@@ -2,12 +2,13 @@
 /**
  * 
  * @package WordPress
- * @subpackage Nathalie Mota "Footer"
- * @since Nathalie MOTA 1.0
- * @author GitPixel
+ * @subpackage Portefolio "Footer"
+ * @since Portefolio 1.0
+ * @author Christine CRATO
  * 
  */
 ?>
+
     <!-- Using wp_nav_menu function to display WP menu -->
     <footer id="menuFooter" class="menuFooter">
             <?php wp_nav_menu(
@@ -18,7 +19,7 @@
                 )
             );
             ?>
-            <p class="copyright">Tous Droits Réservés</p>
+            <p class="copyright">Copyright @ 2024 - Christine CRATO</p>
     </footer>
 
     <!-- Launch Contact Modal -->

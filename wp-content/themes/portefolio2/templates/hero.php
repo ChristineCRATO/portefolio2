@@ -9,6 +9,9 @@
  * 
  */
 ?>
+<?php
+echo "Bonjour, mon hero!";
+?>
 
 <!-- HERO -->
  

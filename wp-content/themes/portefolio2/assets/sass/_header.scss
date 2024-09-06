@@ -33,10 +33,19 @@ header {
                     flex-direction: column;
             }
     }
-    .menuLogo img {
-        width: 12vw;
+    .logoText {
         height: auto;
-        margin-left: 10vw;
+        margin-left: 6vw;
+        font-family: "SpaceMonoRegular";
+        font-size: 1.3vw;
+        font-weight: 400;
+        color: #f69d5c;
+        text-decoration: none;
+
+                a:hover {
+                    font-weight: 700;
+                    color: #BE77B3;
+                }
 
             @media (max-width: $VSD) {
                 width: 50vw !important;
@@ -90,16 +99,19 @@ header {
         width: 50%;
         display: flex;
         justify-content: flex-end;
-        margin-right: 10vw;
+        margin-right: 6vw;
         
         a {
             font-family: "SpaceMonoRegular";
-            font-size: 1.5vw;
+            font-size: 1.3vw;
             font-weight: 400;
+            color: #f69d5c;
             text-decoration: none;
+            transition: color 0.3s, font-weight 0.3s;
             
                 a:hover {
                     font-weight: 700;
+                    color: #BE77B3;
                 }
             }
 

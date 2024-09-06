@@ -39,9 +39,9 @@ function registerMenus () {
     add_action('wp_enqueue_scripts', 'librairie_jquery');
     
     // Useful Styles and Scripts for Theme
-    function theme_mota_styles_scripts() {
+    function theme_portefolio_styles_scripts() {
         // Load Main Style and Use "Time" to avoid Caching
-        wp_enqueue_style('nathalieMota-style', get_stylesheet_directory_uri(). '/assets/sass/style.css', array(), time());
+        wp_enqueue_style('portefolio-style', get_stylesheet_directory_uri(). '/assets/sass/style.css', array(), time());
 
     
         // Loads all Scripts to make the Site Work
@@ -51,7 +51,7 @@ function registerMenus () {
         wp_enqueue_script('lightbox', get_theme_file_uri(). '/assets/js/lightbox.js', array('jquery'), null, true);
     }
 // Add Function to load Styles & Scripts
-add_action('wp_enqueue_scripts', 'theme_mota_styles_scripts');
+add_action('wp_enqueue_scripts', 'theme_portefolio_styles_scripts');
 
 //----------------------------------------------------------------------------------//
 //                                  Load More Photos                                //

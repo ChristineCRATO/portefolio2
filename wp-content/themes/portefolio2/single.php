@@ -5,10 +5,13 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package WordPress
- * @subpackage Nathalie Mota
- * @since Nathalie MOTA 1.0
- * @author GitPixel
+ * @subpackage Portefolio
+ * @since Portefolio 1.0
+ * @author Christine CRATO
  */
+?>
+<?php
+echo "Bonjour, single php!";
 ?>
 
 <?php get_header(); ?>

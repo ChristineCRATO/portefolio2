@@ -9,6 +9,9 @@
  * 
  */
 ?>
+<?php
+echo "Bonjour, photoblock accueil!";
+?>
 
 <!-- Home Page Photo Block -->
 <div class="initialBlock">
@@ -16,9 +19,8 @@
  <?php
  // Get 8 Photos for Initial Block
             $args = array(
-                'post_type' => 'photo',
+                'post_type' => 'projet',
                 'posts_per_page' => 8,
-                'orderby' => 'date',
                 'order' => 'DESC',
             );
     
@@ -41,7 +43,7 @@
                 wp_reset_postdata();
                 else :
                     // Message Photo Not Found
-                    echo 'Aucune photo trouvée.';
+                    echo 'Aucun Projet trouvé.';
                 endif;
                 ?>
 </div>

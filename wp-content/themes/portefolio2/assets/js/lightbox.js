@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
     const $lightbox = $('#lightbox');
     const $imgLightbox = $('.imgLightbox');
     const $categorieLightbox = $('.categorieLightbox');
-    const $referenceLightbox = $('.referenceLightbox');
     let currentIndex = 0; // Index of the Currently Displayed Img
 
     // Update Lightbox Content Based on IMG Index
