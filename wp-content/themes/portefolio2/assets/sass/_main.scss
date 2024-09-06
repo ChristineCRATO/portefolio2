@@ -1,0 +1,58 @@
+// Variables, Fonts... //
+@import "variables";
+@import "fonts";
+
+// MAIN //
+html {
+    margin-top: 0;
+}
+
+body {
+    font-family: "SpaceMonoRegular", sans-serif;
+    font-weight: 400;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a, a:visited {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+}
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.wp-block-group__inner-container {
+    padding: 2vw 1vw;
+    margin: 0 11vw;
+}
+.wp-block-group, .viePrive {
+    line-height: 2.5;
+    h3 {
+        font-family: "SpaceMonoRegular";
+        font-size: 30px;
+        font-weight: bold;
+    }
+    p {
+        font-family: "SpaceMonoRegular";
+        font-size: 18px;
+        font-weight: 400;
+        }
+}
+@media (max-width: $VSD) {
+    .wp-block-group, .viePrive {
+        h3 {
+            font-size: 4vw;
+        }
+        p {
+            font-size: 3vw;
+        }
+    }
+}
