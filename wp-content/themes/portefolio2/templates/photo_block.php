@@ -10,21 +10,17 @@
  */
 ?>
 
-<?php
-echo "Bonjour, photo block!";
-?>
+
 
 <!-- Photo Block for Home Page and for "You may also like" Section -->
 <?php 
-// Retrieve Photo ID
-$photo = get_the_post_thumbnail_url(null, 'large');
+// Retrieve Projet ID
+$projet = get_the_post_thumbnail_url(null, 'large');
 // Retrieve Photo Title
 $title = get_the_title();
 // Retrieve Post Url
 $url_post = get_permalink();
 // Retrieve Photo Category
-$competence = get_the_terms(get_the_ID(), 'competence');
-$competence = !empty($competence) ? $competence[0]->name : '';
 
 ?>
 
@@ -36,11 +32,6 @@ $competence = !empty($competence) ? $competence[0]->name : '';
      <div class="overlay">
         <!-- Display Photo Title -->
          <h2 class="title_overlay"><?php echo esc_html($title); ?></h2>
-
-         <?php if (!empty($competence)) : ?>
-            <!-- Display Category if Exist -->
-             <h3 class="competence_overlay"><?php echo esc_html($competence); ?></h3>
-        <?php endif; ?>
 
         <!-- Add Icon to See Photo in Detail -->
          <div class="icon_eye">

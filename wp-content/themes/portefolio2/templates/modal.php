@@ -18,6 +18,11 @@
         <div class="containerTitleModal">
             <div class="titleModal1"></div>
         </div>
+
+        <!-- Ajout du texte -->
+        <p class="introTxt">Je suis toujours ouverte à de nouvelles opportunités, N'hésitez pas à me contacter et on discutera de votre projet passionnant !</p>
+
+
         <!-- Insert Modal Form -->
         <div class="labelModal">
 

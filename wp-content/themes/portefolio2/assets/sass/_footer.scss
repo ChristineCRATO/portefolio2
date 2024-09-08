@@ -13,9 +13,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f7e1d6;
     gap: 7.5vw;
-    border-top: 1px solid black;
-    box-shadow: 0 -2px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #f69D5C;
+    box-shadow: 0 -2px #f5bc9f;
 
         a, p {
             text-transform: uppercase;
@@ -37,7 +38,7 @@ footer {
             padding-bottom: 14vw;
                 
                 a, p {
-                    font-size: 3.5vw !important;
+                    font-size: 4.5vw !important;
                     text-transform: uppercase;
 
                     &:hover {
@@ -46,6 +47,10 @@ footer {
                 }
                 #menu-item-83 {
                     margin-bottom: 11vw;
+
+                        @media (max-width: $VSD) {
+                            margin-left: 13vw;
+                        }
                 }
                 #menu-item-84 {
                     display: flex;

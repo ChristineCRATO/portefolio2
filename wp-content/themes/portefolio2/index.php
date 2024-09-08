@@ -13,10 +13,6 @@
 ?>
 
 <?php
-echo "Bonjour, index php!";
-?>
-
-<?php
 
 get_header();
 ?>
@@ -31,6 +27,28 @@ get_header();
 					the_content();
 				endwhile;
 			endif;
+
+		// Templates Projets //
+		
+		// Integration Chic Dressing Template Projet //
+		get_template_part('templates/chicDressing');
+
+		// Integration Artbox Template Projet //
+		get_template_part('templates/artbox');
+
+		// Integration Matrix Kawaï Girly Template Projet //
+		get_template_part('templates/kawai');
+
+		// Integration Robbie LENS Photographie Template Projet //
+		get_template_part('templates/lens');
+
+		// Integration Planty Template Projet //
+		get_template_part('templates/planty');
+
+		// Integration Ridding Cities Template Projet //
+		get_template_part('templates/riddingCities');
+
+
 			?>
 
 	</section>

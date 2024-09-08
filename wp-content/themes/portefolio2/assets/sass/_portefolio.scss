@@ -1,0 +1,44 @@
+// Variables, Fonts... //
+@import "animations";
+@import "fonts";
+@import "variables";
+
+// Portefolio //
+
+.slidePortefolio {
+    padding: 20px;
+  }
+#portefolio h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+
+      @media (max-width: $VSD) {
+        font-size: 8vw;
+      }
+}
+.containerImg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+      @media (max-width: $VSD) {
+        flex-direction: column;
+        gap: 1vw;
+      }
+
+      a {
+        display: block;
+        width: calc(33.333% - 10px);
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+
+          @media (max-width: $VSD) {
+            width: 80vw;
+          }
+      }
+}

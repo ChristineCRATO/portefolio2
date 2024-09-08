@@ -9,19 +9,20 @@
  * 
  */
 ?>
-<?php
-echo "Bonjour, single projet!";
-?>
 
-<!-- SINGLE-PHOTO -->
+<!-- SINGLE-Projet -->
  
 <?php
 // Retrieve ACF Fields
-$projetID = get_field('Projet'); // Retrieve Projet Title
+$projetID = get_field('Projet');
+$slogan = get_field('Slogan');
+$competences = get_field('Competences');
+$lien_site = get_field('Lien_du_site');
+$lien_git = get_field('Lien_git');
+$descriptif = get_field('Descriptif');
 
 // Retrieve Taxnomie Terms
 $competence = get_the_terms(get_the_ID(), 'competence');
-    $competence_name = !empty($competence[0]) ? $competence[0]->name : 'Non défini';
 
 // Previous and Next Post URL
 $next_projet = get_next_post();
@@ -40,8 +41,29 @@ $next_thumbnail = $next_projet ? get_the_post_thumbnail_url($next_projet->ID, 't
             </div>
             <div class="detailProjet">
                 <h2><?php echo esc_html(get_the_title()); ?></h2>
-                <div class="taxoProjet">
-                    <p>Compétences : <?php echo esc_html($competence_name); ?></p>
+                <p class="slogan"><?php echo esc_html($slogan); ?></p>
+                <p class="competences">Compétences : <?php echo esc_html($competence_name); ?></p>
+                <p class="lien_site">Lien : <a href="<?php echo esc_url($lien_site); ?>" target="_blank"><?php echo esc_html($lien_site); ?></a></p>
+                <p class="lien_git">GitHub : <a href="<?php echo esc_url($lien_git); ?>" target="_blank"><?php echo esc_html($lien_git); ?></a></p>
+                <p class="descriptif"><?php echo esc_html($descriptif); ?></p>
+
+                <div class="competences">
+                    <?php if ($competence_terms) : ?>
+                        <?php foreach ($competence_terms as $term) : ?>
+                            <?php
+                            // Retrieve the image field for this term
+                            $term_image = get_field('image_field_name', 'term_' . $term->term_id);
+                            ?>
+                            <?php if ($term_image) : ?>
+                                <div class="competence">
+                                    <img src="<?php echo esc_url($term_image); ?>" alt="<?php echo esc_attr($term->name); ?>">
+                                    <p><?php echo esc_html($term->name); ?></p>
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else : ?>
+                        <p>Aucune Compétence définie.</p>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -50,7 +72,7 @@ $next_thumbnail = $next_projet ? get_the_post_thumbnail_url($next_projet->ID, 't
     <!-- Contact Bloc -->
     <div class="blocContact">
         <div class="contact">
-            <p class="pContact">Cette photo vous intéresse ?</p>
+            <p class="pContact">Cette Projet vous intéresse ?</p>
             <button id="contact-modal" data-reference="<?php echo esc_html($reference); ?>">Contact</button>
         </div>
         

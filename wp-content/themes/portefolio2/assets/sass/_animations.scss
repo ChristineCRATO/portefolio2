@@ -1,0 +1,49 @@
+// KeyFrames Animations //
+
+// Section "A Propos"//
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Section "Compétences"//
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(600px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Section "Portefolio"//
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(600px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Menu Burger //
+@keyframes fadeRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

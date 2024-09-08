@@ -63,14 +63,15 @@
         flex-direction: column;
         margin-left: 20vw;
     }
-    .detailPhoto {
-        padding: 2vw 11vw 60vw 0;
+    .detailProjet {
+        padding: 2vw 0vw 60vw 0;
         width: 100%;
 
             h2 {
                 display: flex;
                 flex-direction: column;
                 font-size: 10vw;
+                color : #f69D5C;
                 line-height: 14vw;
             }
             p {
@@ -82,13 +83,13 @@
     }
 }
 
-// Contact Bloc - "Cette photo vous intéresse ?" //
+// Contact Bloc - "Cette projet vous intéresse ?" //
 .blocContact {
     display: flex;
     flex-direction: row;
-    margin: 0 10vw;
-    border-bottom: 1px solid black;
+    margin: 3vw 10vw;
     gap: 34.5vw;
+    border-top: 2px solid #f69D5C;
 
         @media (max-width: $VSD) {
             align-items: center;
@@ -103,8 +104,7 @@
 .contact {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid black;
-    padding: 3vw 0;
+    padding: 5vw 0 3vw 0;
     gap: 7.1vw;
 
         @media (max-width: $VSD) {
@@ -137,7 +137,8 @@
         width: 17.5vw;
         height: 3.3vw;
         border: none;
-        background: #d8d8d8;
+        background: #f69D5C;
+        color: #F7E1D6;
         font-family: "SpaceMonoRegular";
         font-size: 1.3vw;
         font-weight: 400;
@@ -151,7 +152,7 @@
             }
 }
     #contact-modal:hover {
-            background-color: black;
+            background-color: #be77b3;
             color: white;
             cursor: pointer;
         }

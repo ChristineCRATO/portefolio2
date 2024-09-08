@@ -19,13 +19,14 @@
     height: 3.5vw;
     font-size: 1.5vw;
     margin-bottom: 4vw;
-    background: #d8d8d8;
+    background: #F69D5C;
+    color: #F7E1D6;
     border: none;
     transition: background-color 0.3s, color 0.3s;
 }       
 #btn-more:hover {
-            background-color: black;
-            color: white;
+            background-color: #BE77B3;
+            color: #F7E1D6;
         }
 
     @media (max-width: $VSD) {

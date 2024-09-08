@@ -1,0 +1,88 @@
+// Variables, Fonts... //
+@import "animations";
+@import "fonts";
+@import "variables";
+
+// HERO //
+.a-propos {
+    display: flex;
+    align-items: flex-start;
+    padding: 3vw;
+    margin: 4vw;
+    opacity: 0;
+    animation: fadeInLeft 2s forwards;
+
+        @media (max-width: $VSD) {
+            flex-direction: column;
+            gap: 3vw;
+        }
+}
+.a-proposImg {
+    flex: 1;
+    max-width: 30vw;
+    margin-right: 2vw;
+
+        @media (max-width: $VSD) {
+            max-width: 70vw;
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+}
+.a-proposTxt {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1vw;
+            font-size: 3vw;
+            color: #f69d5c;
+
+                @media (max-width: $VSD) {
+                    font-size: 8vw;
+                }
+        }
+        p {
+            margin: 0;
+            text-align: justify;
+            font-size: 1.5vw;
+            color: #525588;
+
+                @media (max-width: $VSD) {
+                    font-size: 4vw;
+                }
+        }
+    .titreLogo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+    .reseauxSociaux {
+        display: flex;
+        gap: 1vw;
+
+        a {
+            display: inline-block;
+        }
+        img {
+            width: 4vw;
+            height: auto;
+            transition: transform 0.3s;
+            
+                @media (max-width: $VSD) {
+                    width: 6vw;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+        }
+    }        
+}

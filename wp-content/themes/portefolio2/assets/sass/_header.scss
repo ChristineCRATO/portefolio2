@@ -1,6 +1,7 @@
 // Variables, Fonts... //
-@import "variables";
+@import "animations";
 @import "fonts";
+@import "variables";
 
 // HEADER //
 body {
@@ -13,6 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F7E1D6;
     box-shadow: 0 4px 14px 10px rgba(0, 0, 0, 0.03);
     z-index: 1000;
 }
@@ -27,7 +29,6 @@ header {
 
             @media (max-width: $VSD) {
                     width: 100%;
-                    height: 17vh;
                     position: relative;
                     display: flex;
                     flex-direction: column;
@@ -39,35 +40,37 @@ header {
         font-family: "SpaceMonoRegular";
         font-size: 1.3vw;
         font-weight: 400;
-        color: #f69d5c;
+        color: #BE77B3;
         text-decoration: none;
+        transition: color 0.3s, font-weight 0.3s;
 
-                a:hover {
-                    font-weight: 700;
-                    color: #BE77B3;
-                }
-
-            @media (max-width: $VSD) {
-                width: 50vw !important;
-                display: flex;
-                align-items: center;
-                margin-left: -38vw;
-                margin-top: 6vw;
-            }
-            @media (max-width: $LD) {
-                width: 25vw;
-            }
-            @media (max-width: $XLD) {
-                width: 25vw;
-            }
-            @media (max-width: $XXLD) {
-                width: 20vw;
-            }
+        
+        @media (max-width: $VSD) {
+            width: 50vw !important;
+            display: flex;
+            align-items: center;
+            margin-left: -38vw;
+            margin-top: 6vw;
+            font-size: 4vw;
+        }
+        @media (max-width: $LD) {
+            width: 25vw;
+        }
+        @media (max-width: $XLD) {
+            width: 25vw;
+        }
+        @media (max-width: $XXLD) {
+            width: 20vw;
+        }
     }
-    .menuBlock {
-        display: none;
+.menuLogo a:hover .logoText {
+        font-weight: 700;
+        color: #f69d5c;
+    }
+.menuBlock {
+    display: none;
 
-            @media (max-width: $VSD) {
+        @media (max-width: $VSD) {
                 width: 30px;
                 height: 20px;
                 position: absolute;
@@ -124,9 +127,9 @@ header {
                     top: 46px;
                     left: 0;
                     padding: 35vw 0 100vw 0;
-                    background-color: #E00000;
+                    background-color: #BE77B3;
                     z-index: 999;
-                    animation: fadeInRight 0.6s forwards ease;
+                    animation: fadeRight 0.6s forwards ease;
         
                         &.active {
                             display: flex;
@@ -139,19 +142,8 @@ header {
                             box-sizing: border-box;
                             padding: 10px 0;
                             font-size: 8vw;
-                            color: white !important;
+                            color: #f7e1d6;
                             margin: 0;
                         }
                 }
-    }
-
-    @keyframes fadeInRight {
-        0% {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
     }

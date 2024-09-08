@@ -1,0 +1,172 @@
+// Variables, Fonts... //
+@import "animations";
+@import "fonts";
+@import "variables";
+
+/* CSS Pages de Projet */
+.projetPage {
+  padding: 2vw;
+  max-width: 80vw;
+  margin: 0 auto;
+
+      @media (max-width: $VSD) {
+            padding: 4vw;
+            max-width: 90vw;
+        }
+}
+.projetImg {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.projetImg img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 0.8vw;
+  display: block;
+  margin: 0 auto;
+
+      @media (max-width: $VSD) {
+        max-width: 80%;
+        border-radius: 1.2vw;
+      }
+}
+.projetTitle1 {
+  text-align: center;
+  font-size: 4vw;
+  margin-bottom: 1.5vw;
+  color: #F69D5C;
+
+      @media (max-width: $VSD) {
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+      }
+}
+.projetTitle2 {
+  text-align: left;
+  font-size: 1.5vw;
+  color: #BE77B3;
+  margin-bottom: 2vw;
+
+      @media (max-width: $VSD) {
+            font-size: 3.5vw;
+            margin-bottom: 3vw;
+      }
+}
+.projetTitle3 {
+  color: red;
+  font-size: 1.5vw !important;
+}
+.projetP {
+  text-align: justify;
+  font-size: 1.3vw;
+  line-height: 1.6;
+  margin-bottom: 2vw;
+  
+      @media (max-width: $VSD) {
+        margin-bottom: 3vw;
+      }
+}
+.siteLink {
+  display: inline-block;
+  flex-direction: row;
+  margin: 3vw 0;
+
+      .projetTitle2 a {
+        display: inline;
+        color: #F69D5C;
+        font-size: 1.5vw;
+      }
+}
+.projetIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3vw;
+  max-width: 80vw;
+  margin: 0 auto;
+
+      @media (max-width: $VSD) {
+        gap: 4vw;
+      }
+}
+.projetCompetences {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permet aux icônes de passer à la ligne si l'espace manque */
+  justify-content: center; /* Centre les icônes */
+  align-items: center; /* Centre verticalement les icônes */
+  margin-bottom: 2vw;
+
+        @media (max-width: $VSD) {
+          margin-bottom: 3vw;
+          justify-content: center;
+        }
+  
+      a {
+        display: inline-block;
+        margin: 0 1vw;
+
+        @media (max-width: $VSD) {
+          margin: 0 2vw;
+        }
+      }
+      img {
+        width: 5vw;
+        height: auto;
+        vertical-align: middle;
+        
+        @media (max-width: $VSD) {
+          width: 4vw;
+        }
+      }
+    }
+    .projetLinks {
+      text-align: center;
+      margin-bottom: 3vw;
+      
+        @media (max-width: $VSD) {
+          font-size: 2.5vw;
+          margin-bottom: 3vw;
+          text-align: center;
+        }
+      img {
+        width: 5vw;
+        margin-top: 1vw;
+        
+        @media (max-width: $VSD) {
+          width: 3vw;
+          height: 3vw;
+        }
+      }
+    }
+    .projetCompetences,
+    .projetLinks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      
+      
+      img {
+        width: 5vw;
+        height: auto;
+        margin: 1vw 0;
+        
+        @media (max-width: $VSD) {
+          width: 8vw;
+        }
+      }
+      h2 {
+        margin-bottom: 1vw;
+        font-size: 2vw;
+        
+        @media (max-width: $VSD) {
+          font-size: 3vw;
+        }
+      }
+.containerIcon {
+  display: flex;
+  flex-direction: row;
+}
+}

@@ -1,0 +1,51 @@
+// Variables, Fonts... //
+@import "animations";
+@import "fonts";
+@import "variables";
+
+// Competences //
+
+.fadeInRight {
+    opacity: 0;
+    animation: fadeInRight 2s forwards;
+    animation-delay: 2s;
+}
+.competenceTitle h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 3vw;
+    font-size: 3vw;
+    color: #f69d5c;
+
+            @media (max-width: $VSD) {
+                margin-left: 4vw;
+                font-size: 8vw;
+            }
+}
+.competences {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
+
+            @media (max-width: $VSD) {
+                margin-right: 4vw;
+                gap: 1vw;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        img {
+            width: 6vw;
+            height: auto;
+
+                @media (max-width: $VSD) {
+                    width: 20vw;
+                    margin-bottom: 1vw;
+                }
+        }
+}
